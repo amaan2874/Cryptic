@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRYPTIC</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/whyus.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navlogo">
+        <img src="/images/logo.png" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active" onclick="setActiveLink(event)">Home</a></li>
+        <li><a href="#about" onclick="setActiveLink(event)">About</a></li>
+        <li><a href="#products" onclick="setActiveLink(event)">Products</a></li>
+        <li><a href="#services" onclick="setActiveLink(event)">Services</a></li>
+        <li><a href="#whyus" onclick="setActiveLink(event)">Why Us</a></li>
+        <li><a href="#contact" onclick="setActiveLink(event)">Contact</a></li>
+        <li class="user-dropdown">
+          <a onclick="toggleDropdown(event)">User</a>
+          <ul class="dropdown-menu">
+            <li><a href="#login">Login</a></li>
+            <li><a href="#registration">Registration</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    
+  </header>
+  <main>
+    <section id="home" class="section">
+      <div class="hero-section">
+        <div class="hero-overlay">
+          <h1>WE CARE YOUR NEEDS</h1>
+          <p>
+            Simply having a great site design will not lead you into success in this cyberspace.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section">
+      <div class="About_container">
+        <header class="header">
+          <h1>Welcome To Cryptic</h1>
+          <p>
+            Cryptic technologies Pvt Ltd is a highly professional software designing and development company also
+            providing several unique internet marketing solutions for our client needs. We offer a wide range of
+            services targeting our client specific audience and project their site information to preserve their
+            customers. We work with dedication and offer our clients with quality solutions to all their business
+            exigencies. Cryptic Technologies Pvt Ltd is an adept software designing and development company offering
+            effectual solutions in the industry. We suggest the best marketing propositions to our clients for the
+            improved visibility of their web sites and works. We are unique in our ways as we are a team of highly
+            motivated and dedicated professionals always looking forward to accomplish the fresh and creative services
+            to our client needs.
+          </p>
+        </header>
+
+        <div class="features">
+          <div class="feature">
+            <img
+              src="images/Scalable.png"
+              alt="Scalable">
+            <h3>Scalable</h3>
+            <p>Scale the web app to handle traffic of any magnitude with zero downtime.</p>
+          </div>
+          <div class="feature">
+            <img
+              src="images/Responsive.png"
+              alt="Responsive">
+            <h3>Responsive</h3>
+            <p>Delivering an apt user experience regardless of screen size, and resolution.</p>
+          </div>
+          <div class="feature">
+            <img src="images/Secure.png"
+              alt="Secure">
+            <h3>Secure</h3>
+            <p>A team of security experts secure websites remains secure against cyber attacks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products" class="section">
+      <section class="image-grid header">
+        <h1>Products</h1>
+        <div class="grid">
+          <!-- Account & Inventory -->
+          <div class="grid-item">
+            <img
+              src="https://img.sdcexec.com/files/base/acbm/scn/image/2023/10/AdobeStock_308519798.65204ab01f47f.png?auto=format%2Ccompress&q=70"
+              alt="Account & Inventory">
+            <div class="description">
+              <h3>Account and Inventory</h3>
+              <ul>
+                <li>Billing with Barcode</li>
+                <li>GST Calculation</li>
+                <li>Data Export Utilities</li>
+                <li>Backup & Restore</li>
+                <li>Email & SMS Notifications</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Health Care -->
+          <div class="grid-item">
+            <img
+              src="https://cdn.open-pr.com/T/3/T302990603_g.jpg"
+              alt="Health Care">
+            <div class="description">
+              <h3>Health Care</h3>
+              <ul>
+                <li>OPD</li>
+                <li>Diagnosis</li>
+                <li>Pharmacy</li>
+                <li>Account & Inventory</li>
+                <li>Backup & Restore</li>
+                <li>Email & SMS Notifications</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- Restaurant System -->
+          <div class="grid-item">
+            <img
+              src="https://bdtask.com/blog/assets/plugins/ckfinder/core/connector/php/uploads/images/Features%20of%20Restaurant%20Management%20System.jpg"
+              alt="Restaurant System">
+            <div class="description">
+              <h3>Restaurant System</h3>
+              <ul>
+                <li>Multiple Table Billing</li>
+                <li>GST Calculation</li>
+                <li>Data Export Utilities</li>
+                <li>Backup & Restore</li>
+                <li>Email & SMS Notifications</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- Online Exam System -->
+          <div class="grid-item">
+            <img
+              src="https://shikshasanvad.com/wp-content/uploads/2023/01/online_exams-780x470.png"
+              alt="Online Exam System">
+            <div class="description">
+              <h3>Online Exam System</h3>
+              <ul>
+                <li>Student Enrollment</li>
+                <li>Fees Management</li>
+                <li>Paper Generation</li>
+                <li>Online Exam with Timer</li>
+                <li>Backup & Restore</li>
+                <li>Email & SMS Notifications</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- Office Automation System -->
+          <div class="grid-item">
+            <img
+              src="https://sourcebit.net/images/office-automation.png"
+              alt="Office Automation System">
+            <div class="description">
+              <h3>Office Automation System</h3>
+              <ul>
+                <li>Employee Management</li>
+                <li>Salary Management</li>
+                <li>Document Management</li>
+                <li>Attendance Management</li>
+                <li>Backup & Restore</li>
+                <li>Email & SMS Notifications</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- GIS Application -->
+          <div class="grid-item">
+            <img
+              src="https://www.spatialpost.com/wp-content/uploads/2021/10/application-of-gis.jpg"
+              alt="GIS Application">
+            <div class="description">
+              <h3>GIS Application</h3>
+              <ul>
+                <li>Survey</li>
+                <li>Tracking</li>
+                <li>Offline Mode</li>
+                <li>Backup & Restore</li>
+                <li>Email & SMS Notifications</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    
+    <section id="services" class="section">
+      <section class="offer-section header">
+        <h1 class="offer-title" style="color: #fff;">What We Offer</h1>
+        <div class="offer-container">
+          <div class="offer-card">
+            <i class="icon">💻</i>
+            <h2>Desktop Application</h2>
+            <p>We provide efficient, user-friendly, and customized desktop applications for clients.</p>
+          </div>
+          <div class="offer-card">
+            <i class="icon">🌐</i>
+            <h2>Web Application</h2>
+            <p>Our specialized web applications ensure usability, compatibility, and scalability.</p>
+          </div>
+          <div class="offer-card">
+            <i class="icon">📱</i>
+            <h2>Mobile Application</h2>
+            <p>We design tailored mobile apps with a focus on performance and user experience.</p>
+          </div>
+          <div class="offer-card">
+            <i class="icon">📍</i>
+            <h2>GIS Application</h2>
+            <p>Efficiently capturing and analyzing geographic data with powerful GIS solutions.</p>
+          </div>
+          <div class="offer-card">
+            <i class="icon">🛒</i>
+            <h2>E-Commerce Solutions</h2>
+            <p>Empowering businesses with modern e-commerce tools and seamless experiences.</p>
+          </div>
+          <div class="offer-card">
+            <i class="icon">📈</i>
+            <h2>Digital Marketing</h2>
+            <p>Level up your brand with cutting-edge digital marketing strategies and tools.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="whyus" class="section">
+      <section class="why-choose-us">
+        <div class="content header">
+          <h1>Why Choose Us</h1>
+          <p>
+            You want a great product or a dedicated team, we make it happen. We’re the right technical partner to have
+            by your side if you’re a startup or company looking to bring a new idea to life. We tailor our services to
+            meet your needs and use top-notch technology selected specifically for your project after thorough analysis.
+            We’re always ready to roll up our sleeves and start doing the heavy lifting required to bring an excellent
+            product or service to market.
+          </p>
+          <ul>
+            <li>✔️ We customize our solutions to fit your specific needs.</li>
+            <li>✔️ Our goal is to transform the way that you do business.</li>
+            <li>✔️ We deliver best-in-class performance at affordable prices.</li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img
+            src="/images/Software-development.webp"
+            alt="Why Choose Us Illustration">
+        </div>
+      </section>
+    </section>
+    <section id="contact" class="section">
+      <!-- Get in Touch Section -->
+      <section class="get-in-touch">
+        <div class="Contact_container">
+          <div class="form-section card">
+            <h2>Get in touch</h2>
+            <form name="submit-to-google-sheet">
+              <input id="clearName" name="name" type="text" placeholder="Full Name" required>
+              <input id="clearName" name="name" type="number" placeholder="Phone Number" required>
+              <input id="clearEmail" name="email" type="email" placeholder="Your email" required>
+              <input id="clearName" name="name" type="text" placeholder="Subject" required>
+              <textarea id="clearMessage" name="message" placeholder="Message" required></textarea>
+              <button class="btn" type="submit">Send my message</button>
+            </form>
+            <div id="msg"></div>
+
+          </div>
+          <div class="image-section">
+            <img src="https://static.vecteezy.com/system/resources/previews/027/244/724/non_2x/contact-us-or-the-customer-support-hotline-people-connect-businessman-touching-virtual-icons-doing-to-customer-service-call-center-free-png.png" alt="Contact Us">
+            <!-- <div class="overlay-text">Drop us a line</div> -->
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+      <div >
+        <h2>Get in touch anytime</h2>
+        <div class="info-wrapper">
+          <div class="info-item">
+            <img src="/images/Mail.png" alt="Email Icon">
+            <div class="details">
+              <strong>Email</strong>
+              <a href="mailto:info@cryptic.org.in">info@cryptic.org.in</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="/images/Phone call.png" alt="Phone Icon">
+            <div class="details">
+              <strong>Phone</strong>
+              <span>+91 8087159328</span>
+            </div>
+          </div>
+          <!-- <div class="info-item">
+            <img src="/images/File minus.png" alt="Fax Icon">
+            <div class="details">
+              <strong>Fax</strong>
+              <span>(123) --------</span>
+            </div>
+          </div> -->
+          <div class="info-item">
+            <img src="/images/Map pin line.png" alt="Address Icon">
+            <div class="details">
+              <strong>Address</strong>
+              <span>Habib Nagar - 1, Amravati</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

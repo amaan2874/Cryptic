@@ -1,0 +1,160 @@
+.hero-section {
+  position: relative;
+  background-image: url('https://t4.ftcdn.net/jpg/02/67/52/49/360_F_267524919_wXbVQHR189pLVU06eQ85GGLnJMq2eJFR.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Animated Background Overlay */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Hero Content with Glassmorphism Effect */
+.hero-overlay {
+  position: relative;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  border-radius: 15px;
+  max-width: 70%;
+  backdrop-filter: blur(10px) saturate(180%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(0.8);
+  animation: scaleUp 1.5s ease-out forwards, fadeIn 2s ease-in-out;
+}
+
+/* Title Animation */
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: slideUp 1.5s ease-out 0.5s forwards;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Paragraph Animation */
+.hero-overlay p {
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: slideUp 1.5s ease-out 1s forwards;
+}
+
+/* Animated Button */
+.hero-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: slideUp 1.5s ease-out 1.5s forwards;
+}
+
+.hero-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 120, 150, 0.5);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Scale-up effect */
+@keyframes scaleUp {
+  from {
+      transform: scale(0.8);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  from {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Responsive Design */
+
+/* Tablets and Smaller Screens */
+@media (max-width: 768px) {
+  .hero-overlay {
+      max-width: 85%;
+      padding: 20px;
+  }
+
+  .hero-overlay h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero-overlay p {
+      font-size: 1rem;
+  }
+
+  .hero-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .hero-section {
+      height: 100vh;
+  }
+
+  .hero-overlay {
+      padding: 15px;
+      max-width: 90%;
+  }
+
+  .hero-overlay h1 {
+      font-size: 2rem;
+  }
+
+  .hero-overlay p {
+      font-size: 0.9rem;
+  }
+
+  .hero-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+}
