@@ -1,6 +1,6 @@
 .hero-section {
   position: relative;
-  background-image: url('https://t4.ftcdn.net/jpg/02/67/52/49/360_F_267524919_wXbVQHR189pLVU06eQ85GGLnJMq2eJFR.jpg'); 
+  background-image: url('/images/bgimage.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

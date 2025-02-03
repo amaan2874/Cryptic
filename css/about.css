@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     margin: 0;
     padding: 0;
     
@@ -25,7 +25,7 @@ body {
   
   .header h1 {
     font-size: 3.2rem;
-    color: #21579e;
+    color: #0093dd;
     animation: slideDown 1s ease-in-out;
     text-shadow: 0 8px 25px rgba(0, 74, 173, 0.3);
     font-weight: bold;
@@ -38,7 +38,7 @@ body {
     position: absolute;
     width: 100px;
     height: 4px;
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    background: linear-gradient(90deg, #000, #0093dd);
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -53,8 +53,9 @@ body {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    font-style: italic;
+    /* font-style: italic; */
     letter-spacing: 2px;
+    padding-bottom: 5rem;
     
     
   }
