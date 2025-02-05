@@ -14,6 +14,7 @@ body {
     padding: 20px;
     animation: fadeIn 1s ease-in-out;
     /* background: linear-gradient(to bottom, #c9d6ff, #e2e2e2); */
+    /* background-color: green; */
   }
   
   /* Header Section */
@@ -24,7 +25,7 @@ body {
   }
   
   .header h1 {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     color: #0093dd;
     animation: slideDown 1s ease-in-out;
     text-shadow: 0 8px 25px rgba(0, 74, 173, 0.3);
@@ -45,16 +46,17 @@ body {
   }
   
   .header p {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     color: #555;
     line-height: 1.8;
+    text-align: justify;
     animation: fadeIn 2s ease-in-out;
     margin-top: 15px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     /* font-style: italic; */
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding-bottom: 5rem;
     
     
@@ -118,7 +120,7 @@ body {
   }
   
   .feature h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 15px;
     font-weight: bold;
@@ -142,14 +144,14 @@ body {
   }
   
   .feature p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #555;
     line-height: 1.6;
     opacity: 0.9;
   }
   
   .feature:hover p {
-    color: #f0f0f0;
+    color: #111;
   }
   
   /* Button Style (Optional Addition) */
@@ -184,11 +186,11 @@ body {
     }
   
     .header h1 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
   
     .header p {
-      font-size: 1.1rem;
+      font-size: 0.8rem;
     }
   }
   

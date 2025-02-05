@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  /* background-color: yellow; */
 }
 
 /* Animated Background Overlay */
@@ -42,7 +43,7 @@
 
 /* Title Animation */
 .hero-overlay h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
   opacity: 0;
   animation: slideUp 1.5s ease-out 0.5s forwards;
@@ -53,7 +54,7 @@
 
 /* Paragraph Animation */
 .hero-overlay p {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   opacity: 0;
   animation: slideUp 1.5s ease-out 1s forwards;
 }
@@ -121,11 +122,11 @@
   }
 
   .hero-overlay h1 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
   }
 
   .hero-overlay p {
-      font-size: 1rem;
+      font-size: 0.8rem;
   }
 
   .hero-button {
@@ -143,14 +144,6 @@
   .hero-overlay {
       padding: 15px;
       max-width: 90%;
-  }
-
-  .hero-overlay h1 {
-      font-size: 2rem;
-  }
-
-  .hero-overlay p {
-      font-size: 0.9rem;
   }
 
   .hero-button {

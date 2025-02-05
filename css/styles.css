@@ -35,15 +35,15 @@
       }
       .nav-links li a {
           text-decoration: none;
-          color: #0093dd;
+          color: #333;
           font-size: 1.2rem;
           transition: color 0.3s ease, transform 0.3s ease;
           padding: 5px;
       }
       .nav-links li a.active ,
       .nav-links li a:hover {
-          color: #fff;
-          background: #0093dd;
+          color: #0093dd;
+          /* background: #0093dd; */
           /* padding: 5px; */
           border-radius: 5px;
           transform: scale(1.1);
@@ -78,12 +78,12 @@
       }
       .dropdown-menu li a {
           text-decoration: none;
-          color: #0093dd;
+          color: #333;
           font-size: 0.9rem;
           transition: color 0.3s ease, transform 0.3s ease;
       }
       .dropdown-menu li a:hover {
-          color: #fff;
+          color: #0093dd;
           transform: scale(1.1);
       }
       .hamburger {
@@ -138,7 +138,7 @@
       }
   /* Section Styles */
   .section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,5 +146,6 @@
     font-weight: bold;
     color: #333;
     padding-top: 100px;
+    /* background-color: #000; */
   }
   

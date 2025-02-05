@@ -38,9 +38,8 @@
 }
 
 .content p {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  margin-bottom: 25px;
+  /* font-size: 1.2rem; */
+  /* line-height: 1.7; */
   color: #555;
   animation: fadeInUp 1.5s ease-out;
 }
@@ -48,12 +47,12 @@
 .content ul {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 2px 0;
 }
 
 .content ul li {
-  font-size: 1.1rem;
-  margin: 15px 0;
+  font-size: 1rem;
+  margin: 5px 0;
   color: #333;
   padding-left: 25px;
   position: relative;
@@ -141,10 +140,10 @@
   }
 
   .content h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
   }
 
   .content p, .content ul li {
-      font-size: 1.1rem;
+      font-size: 0.8rem;
   }
 }

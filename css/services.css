@@ -11,6 +11,7 @@ body {
 .offer-section {
     text-align: center;
     /* padding: 0 20px; */
+    /* background-color: orange; */
 }
 
 .offer-title {
@@ -70,8 +71,8 @@ body {
     animation: bounce 1s infinite alternate;
 }
 
-.offer-card h2 {
-    font-size: 1.8rem;
+.offer-card h3 {
+    font-size: 1.5rem;
     color: #555;
     margin-bottom: 10px;
 }
