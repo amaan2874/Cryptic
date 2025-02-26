@@ -14,6 +14,15 @@
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/whyus.css">
   <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://unpkg.com/ol@7.3.0/ol.css">
+  <script src="https://unpkg.com/ol@7.3.0/dist/ol.js"></script>
+  <style>
+    #map {
+        width: 100%;
+        height: 500px;
+    }
+</style>
 
 </head>
 
@@ -258,6 +267,11 @@
         </div>
       </section>
     </section>
+    <section class="section">
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d777.5704643206399!2d77.75136707743285!3d20.93180164557842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a56f036bbad1%3A0xe9e69aca7f1c607b!2sCryptic%20Technologies%20Pvt%20Ltd!5e1!3m2!1sen!2sin!4v1738839746516!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      <!-- <h2>My Location on OpenLayers Map</h2> -->
+      <div id="map"></div>
+    </section>
     <section id="contact" class="section">
       <!-- Get in Touch Section -->
       <section class="get-in-touch">
@@ -266,9 +280,9 @@
             <h2>Get in touch</h2>
             <form name="submit-to-google-sheet">
               <input id="clearName" name="name" type="text" placeholder="Full Name" required>
-              <input id="clearName" name="name" type="number" placeholder="Phone Number" required>
+              <input id="clearNumber" name="number" type="number" placeholder="Phone Number" required>
               <input id="clearEmail" name="email" type="email" placeholder="Your email" required>
-              <input id="clearName" name="name" type="text" placeholder="Subject" required>
+              <input id="clearSubject" name="Subject" type="text" placeholder="Subject" required>
               <textarea id="clearMessage" name="message" placeholder="Message" required></textarea>
               <button class="btn" type="submit">Send my message</button>
             </form>
@@ -298,7 +312,7 @@
             <img src="images/phone.png" alt="Phone Icon">
             <div class="details">
               <strong>Phone</strong>
-              <span>+91 8087159328</span>
+              <a href="tel:+918087159328">+91 8087159328</a>
             </div>
           </div>
           <!-- <div class="info-item">
@@ -312,14 +326,41 @@
             <img src="/images/address.webp" alt="Address Icon">
             <div class="details">
               <strong>Address</strong>
-              <span>Habib Nagar - 1, Amravati</span>
+              <a href="https://www.google.com/maps/place/1,+Habib+Nagar,+No.1,+Hazrat+Bilal+Nagar,+Amravati,+Maharashtra+444601/@20.9386289,77.7442314,714m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bd6a354e100253b:0xa56cc7d5c8748835!8m2!3d20.9386239!4d77.7468063!16s%2Fg%2F11jp1q38rv?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D">Habib Nagar - 1, Amravati</a>
             </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+  <footer class="custom-footer">
+    <div class="navlogo">
+      <img src="/images/logo.png" alt="Logo" style="filter: brightness(0) invert(1);">
+    </div>
+    <div class="custom-container">
+        <div class="custom-footer-links">
+            <div class="custom-link-column">
+                <h4>Product</h4>
+                <a href="#products" onclick="setActiveLink(event)">Features</a>
+                <a href="#products" onclick="setActiveLink(event)">Pricing</a>
+            </div>
+            <div class="custom-link-column">
+                <h4>Services</h4>
+                <a href="#services" onclick="setActiveLink(event)">Design</a>
+                <a href="#services" onclick="setActiveLink(event)">Development</a>
+                <a href="#services" onclick="setActiveLink(event)">Blogs</a>
+            </div>
+            <div class="custom-link-column">
+                <h4>Company</h4>
+                <a href="#about" onclick="setActiveLink(event)">About Us</a>
+                <!-- <a href="#">Contact Us</a> -->
+                <a href="/terms.html">Terms & Condition</a>
+            </div>
+        </div>
+    </div>
+</footer>
   <script src="js/script.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>

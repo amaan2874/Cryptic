@@ -47,6 +47,7 @@ body {
   
   .header p {
     font-size: 1.0rem;
+    font-weight: normal;
     color: #555;
     line-height: 1.8;
     text-align: justify;
@@ -145,6 +146,7 @@ body {
   
   .feature p {
     font-size: 0.9rem;
+    font-weight: normal;
     color: #555;
     line-height: 1.6;
     opacity: 0.9;
